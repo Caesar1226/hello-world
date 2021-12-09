@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">$attrs|$listeners</router-link>
+      <router-link to="/about">测试表格多选</router-link>
+      <router-link to="/webWorker">webWorker</router-link>
+      <router-link to="/image">图片压缩测试</router-link>
     </div>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -15,6 +17,15 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  #nav {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,.05);
+  }
 }
 #nav {
   padding: 30px;
